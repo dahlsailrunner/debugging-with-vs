@@ -1,6 +1,5 @@
 using CarvedRock.Core;
 using CarvedRock.Domain;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarvedRock.Api.Controllers;
