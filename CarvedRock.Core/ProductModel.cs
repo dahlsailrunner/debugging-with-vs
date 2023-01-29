@@ -3,6 +3,7 @@
 namespace CarvedRock.Core;
 
 public class ProductModel
+//public record ProductModel
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;
@@ -12,6 +13,11 @@ public class ProductModel
     public string ImgUrl { get; set; } = null!;
     public decimal Rating { get; set; }
     public int NumberOfRatings { get; set; }
+
+    //public override string ToString()
+    //{
+    //    return $"{Name} ({Id})";
+    //}
 }
 
 [JsonSourceGenerationOptions(PropertyNamingPolicy = JsonKnownNamingPolicy.CamelCase)]

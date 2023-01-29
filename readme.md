@@ -2,7 +2,7 @@
 
 This is the repository with the code associated with a Pluralsight course called "Debugging with Visual Studio 2022".
 
-Repo URL: [https://github.com/dahlsailrunner/aspnet6-performance](https://github.com/dahlsailrunner/debugging-with-vs)
+Repo URL: [https://github.com/dahlsailrunner/debugging-with-vs](https://github.com/dahlsailrunner/debugging-with-vs)
 
 ## Running the Solution
 In Visual Studio with the solution open, the **Set Startup Projects** should be chosen
