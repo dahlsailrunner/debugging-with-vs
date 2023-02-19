@@ -2,8 +2,8 @@
 
 namespace CarvedRock.Core;
 
-public class ProductModel
-//public record ProductModel
+//public class ProductModel
+public record ProductModel
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;

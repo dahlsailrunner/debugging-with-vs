@@ -43,6 +43,7 @@ public class ProductLogic : IProductLogic
         var inventory = await invTask;
         _logger.LogInformation("finished getting {count} inventory records", inventory.Count);
         var promotion = await promotionTask;
+        var promotionProductName = promotion?.Description;
         _logger.LogInformation("got promotion for product id {id}", promotion?.ProductId);
 
         var results = new List<ProductModel>();

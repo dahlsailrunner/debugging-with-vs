@@ -32,7 +32,13 @@ namespace CarvedRock.Data
                 Products.RemoveRange(Products);
                 SaveChanges();
             };
+            CreateInitialProducts();
 
+            SaveChanges();
+        }
+
+        private void CreateInitialProducts()
+        {
             Products.Add(new Product
             {
                 Name = "Trailblazer",
@@ -89,8 +95,6 @@ namespace CarvedRock.Data
                     "Navigate tricky waterways easily with this great and manageable kayak.",
                 ImgUrl = "/images/shutterstock_645036007.jpg"
             });
-
-            SaveChanges();
         }
     }
 }
