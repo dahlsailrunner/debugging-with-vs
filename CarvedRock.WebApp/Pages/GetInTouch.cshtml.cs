@@ -17,15 +17,14 @@ public class GetInTouchModel : PageModel
     {
         var bestContent = ContactUsContent;
 
-        // slower / problematic ways to read content/email
         var form = await Request.ReadFormAsync();
-
         //var betterContent = form["content"];
         var betterEmail = form["emailaddress"];
 
+        // slower / problematic ways to read content/email
         //var content = Request.Form["content"];
         //var emailAddress = Request.Form["emailaddress"];
-        
+
         // store stuff and get back to user somehow
     }
 }
