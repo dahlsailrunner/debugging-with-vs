@@ -58,6 +58,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddUserAccessTokenHttpClient("backend", configureClient: client =>
 {
     client.BaseAddress = new Uri("https://localhost:7214");
+    //client.BaseAddress = new Uri("http://carvedrock.api");
 });
 
 builder.Services.AddWebOptimizer(pipeline =>

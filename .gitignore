@@ -9,3 +9,6 @@
 /CarvedRock.JMeter/jmeter.log
 /CarvedRock.JMeter/results.xml
 /CarvedRock.Api/CarvedRock.Api.csproj.user
+/CarvedRock.Api/carvedrock.db-wal
+/CarvedRock.Api/carvedrock.db-shm
+/CarvedRock.Api/carvedrock.db

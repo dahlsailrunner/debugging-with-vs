@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  carvedrock.webapp:
+    image: ${DOCKER_REGISTRY-}carvedrockwebapp
+    build:
+      context: .
+      dockerfile: CarvedRock.WebApp/Dockerfile
+
+  carvedrock.api:
+    image: ${DOCKER_REGISTRY-}carvedrockapi
+    build:
+      context: .
+      dockerfile: CarvedRock.Api/Dockerfile
