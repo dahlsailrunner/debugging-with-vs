@@ -1,0 +1,27 @@
+@base=https://localhost:7214
+
+GET {{base}}/AsyncProduct?category=all
+
+###
+
+GET {{base}}/AsyncProduct?category=equip
+
+###
+@client_id=m2m
+@client_secret=secret
+@scopes = api
+
+### Login
+POST https://demo.duendesoftware.com/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+client_id={{client_id}}&
+client_secret={{client_secret}}&
+grant_type=client_credentials&
+scope{{scopes}}
+
+###
+@token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjY2NjgyQzg0OEEzMTQwNjg1RkM4ODNGRDdFQTk5M0NDIiwidHlwIjoiYXQrand0In0.eyJpc3MiOiJodHRwczovL2RlbW8uZHVlbmRlc29mdHdhcmUuY29tIiwibmJmIjoxNjc5MDQ4NTQ3LCJpYXQiOjE2NzkwNDg1NDcsImV4cCI6MTY3OTA1MjE0NywiYXVkIjpbImFwaSIsInVybjpyZXNvdXJjZTEiLCJ1cm46cmVzb3VyY2UyIl0sInNjb3BlIjpbImFwaSIsInJlc291cmNlMS5zY29wZTEiLCJyZXNvdXJjZTEuc2NvcGUyIiwicmVzb3VyY2UyLnNjb3BlMSIsInJlc291cmNlMi5zY29wZTIiLCJyZXNvdXJjZTMuc2NvcGUxIiwicmVzb3VyY2UzLnNjb3BlMiIsInNjb3BlMyIsInNjb3BlNCIsInNoYXJlZC5zY29wZSIsInRyYW5zYWN0aW9uIl0sImNsaWVudF9pZCI6Im0ybSIsImp0aSI6IkQyQkMxMDczOTkzODBDNUI2NTkxQTQ2Q0U4NDBGNDk0In0.YiM4LppfnAPdN4Rx1E7ukwwzqRxjFL_0H47trQysG3FSPTD1ah3PYU7KLQJuoNEhD-IDvjcc_Xgem0hvWFzk2SLG4g4m3Py6b-GFnN9Ej5f0SPTQyioRHst7AIBYASHQompuQ0YpUiWITlYRjSobddszD1GFJ7T8ab5adFeVJ5LGV6YedcZsHC5bpj1iihHj41vPTNy2wvuPNhnwHdiqQ9tHm3ZZspJyrMNBV2wwYoCj6tFlngHJT7LJLZ3U-KqWZnxZ-ZnHEATtWc5WrRHseUWq6xGsa_FKf4fHg5DampFQxK4kx9KJoC6dH-QCYT--2UZClbJTD8QceQ0Gthc6Rg
+
+GET {{base}}/Product?category=kayak
+Authorization: Bearer {{token}}

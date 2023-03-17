@@ -15,10 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.Core", "CarvedRo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E243816-A872-4616-A767-0FA611ECDDB1}"
 	ProjectSection(SolutionItems) = preProject
+		api-calls.http = api-calls.http
 		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2C79E030-A7CC-4F7F-8F86-184336E2109E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarvedRock.GitHub", "CarvedRock.GitHub\CarvedRock.GitHub.csproj", "{14345C00-0BF5-48C4-A58E-AA216B8FA229}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +53,10 @@ Global
 		{2C79E030-A7CC-4F7F-8F86-184336E2109E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C79E030-A7CC-4F7F-8F86-184336E2109E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C79E030-A7CC-4F7F-8F86-184336E2109E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14345C00-0BF5-48C4-A58E-AA216B8FA229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14345C00-0BF5-48C4-A58E-AA216B8FA229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14345C00-0BF5-48C4-A58E-AA216B8FA229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14345C00-0BF5-48C4-A58E-AA216B8FA229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
